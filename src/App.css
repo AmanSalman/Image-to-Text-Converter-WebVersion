@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Arial, sans-serif';
+  background-color: #f0f2f5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 40px;
+}
+
+.innerDiv {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+}
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.inputFile {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.inputFile:hover {
+  background-color: #0056b3;
+}
+
+.image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 3px solid #007bff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.textContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.extractedText {
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.clearButton {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.clearButton:hover {
+  background-color: #c82333;
+}
+
+.loadingIndicator {
+  font-size: 18px;
+  color: #007bff;
+  margin: 20px 0;
+  font-weight: bold;
+}
