@@ -18,7 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
   align-items: center;
+  border-radius: 15px;
 }
 
 .innerDiv {
