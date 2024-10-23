@@ -55,15 +55,17 @@ export default function App() {
     setText('');
   };
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(text);
+    alert('Text copied to clipboard!');
+  };
+
   return (
     <div className="container">
-      <div className="innerDiv">
       <h1 className="title">Image to Text Converter</h1>
       <p className="subtitle">Upload an image to extract text</p>
       
       <input type="file" accept="image/*" onChange={handleImageChange} className="inputFile" />
-
-      </div>
       
       {image && <img src={image} alt="Selected" className="image" />}
       
@@ -74,6 +76,9 @@ export default function App() {
           {text && (
             <div className="textContainer">
               <p className="extractedText">{text}</p>
+              <button className="copyButton" onClick={copyToClipboard}>
+                Copy Text
+              </button>
             </div>
           )}
           {text && (
